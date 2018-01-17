@@ -50,5 +50,35 @@ namespace WebServicesCidades.Models
             }
             return cidades;
         }
+
+        public bool Cadastrar(Cidades cidades){
+            bool resultado = false;
+            try {
+                con = new SqlConnection(conexao);
+                con.Open();
+                cmd = new SqlCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "insert into cidades(nome,estado,habitantes) values(@n,@e,@h)";
+                cmd.Parameters.AddWithValue("@n",cidades.Nome);
+                cmd.Parameters.AddWithValue("@e",cidades.Estado);
+                cmd.Parameters.AddWithValue("@h",cidades.Habitantes);
+
+                int r = cmd.ExecuteNonQuery();
+                if(r > 0)
+                resultado = true;
+
+                cmd.Parameters.Clear();
+            }
+            catch(SqlException se){
+                throw new Exception(se.Message);
+            }
+            catch(Exception ex){
+                throw new Exception(ex.Message);
+            }
+            finally{
+                con.Close();
+            }
+            return resultado;
+        }
     }
 }

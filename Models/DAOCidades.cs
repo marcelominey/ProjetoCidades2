@@ -11,7 +11,7 @@ namespace WebServicesCidades.Models
         SqlCommand cmd = null;
         SqlDataReader rd = null;
 
-        string conexao = @"Data Source=.\SqlExpress;Initial Catalog=ProjetoCidades;user id=sa;password=senai@123";
+        string conexao = @"Data Source=.\SqlExpress;Initial Catalog=ProjetoCidades;user id=sa;password=senai@123";// ProjetoCidades nome do BD.
         public List<Cidades> Listar()
         {
             List<Cidades> cidades = new List<Cidades>(); //criando uma lista e populando com os dados do banco
@@ -23,7 +23,7 @@ namespace WebServicesCidades.Models
                 cmd = new SqlCommand();
                 cmd.Connection = con;
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "Select * from cidades";
+                cmd.CommandText = "Select * from cidades"; // cidades é o nome da tabela
                 rd = cmd.ExecuteReader();
                 while (rd.Read())
                 {
@@ -59,7 +59,7 @@ namespace WebServicesCidades.Models
                 cmd = new SqlCommand();
                 cmd.Connection = con;
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "insert into cidades(nome,estado,habitantes) values(@n,@e,@h)";
+                cmd.CommandText = "insert into cidades(nome,estado,habitantes) values(@n,@e,@h)"; // cidades é o nome da tabela
                 cmd.Parameters.AddWithValue("@n",cidades.Nome);
                 cmd.Parameters.AddWithValue("@e",cidades.Estado);
                 cmd.Parameters.AddWithValue("@h",cidades.Habitantes);
@@ -89,7 +89,7 @@ namespace WebServicesCidades.Models
                 cmd = new SqlCommand();
                 cmd.Connection = con;
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "UPDATE cidades set nome=@n, estado=@e, habitantes=@h where id=@id";
+                cmd.CommandText = "UPDATE cidades set nome=@n, estado=@e, habitantes=@h where id=@id"; // cidades é o nome da tabela
                 cmd.Parameters.AddWithValue("@n",cidades.Nome);
                 cmd.Parameters.AddWithValue("@e",cidades.Estado);
                 cmd.Parameters.AddWithValue("@h",cidades.Habitantes);

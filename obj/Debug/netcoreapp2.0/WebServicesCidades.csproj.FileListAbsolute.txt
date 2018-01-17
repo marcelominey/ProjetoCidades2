@@ -8,3 +8,13 @@ C:\Users\07939313983\backend\WebServicesCidades\obj\Debug\netcoreapp2.0\WebServi
 C:\Users\07939313983\backend\WebServicesCidades\obj\Debug\netcoreapp2.0\WebServicesCidades.AssemblyInfo.cs
 C:\Users\07939313983\backend\WebServicesCidades\obj\Debug\netcoreapp2.0\WebServicesCidades.dll
 C:\Users\07939313983\backend\WebServicesCidades\obj\Debug\netcoreapp2.0\WebServicesCidades.pdb
+C:\Users\fic.INFO\backend\ProjetoCidades2\bin\Debug\netcoreapp2.0\WebServicesCidades.deps.json
+C:\Users\fic.INFO\backend\ProjetoCidades2\bin\Debug\netcoreapp2.0\WebServicesCidades.runtimeconfig.json
+C:\Users\fic.INFO\backend\ProjetoCidades2\bin\Debug\netcoreapp2.0\WebServicesCidades.runtimeconfig.dev.json
+C:\Users\fic.INFO\backend\ProjetoCidades2\bin\Debug\netcoreapp2.0\WebServicesCidades.dll
+C:\Users\fic.INFO\backend\ProjetoCidades2\bin\Debug\netcoreapp2.0\WebServicesCidades.pdb
+C:\Users\fic.INFO\backend\ProjetoCidades2\obj\Debug\netcoreapp2.0\WebServicesCidades.csproj.CoreCompileInputs.cache
+C:\Users\fic.INFO\backend\ProjetoCidades2\obj\Debug\netcoreapp2.0\WebServicesCidades.AssemblyInfoInputs.cache
+C:\Users\fic.INFO\backend\ProjetoCidades2\obj\Debug\netcoreapp2.0\WebServicesCidades.AssemblyInfo.cs
+C:\Users\fic.INFO\backend\ProjetoCidades2\obj\Debug\netcoreapp2.0\WebServicesCidades.dll
+C:\Users\fic.INFO\backend\ProjetoCidades2\obj\Debug\netcoreapp2.0\WebServicesCidades.pdb

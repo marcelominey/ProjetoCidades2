@@ -23,5 +23,12 @@ namespace WebServicesCidades.Controllers
         {
             return dao.Listar().Where(x => x.Id == id).FirstOrDefault();
         }
+        [HttpPost]
+        public IActionResult Post([FromBody]Cidades cidades) //cidades vem do corp do front end
+        {
+            dao.Cadastrar(cidades);
+            return CreatedAtRoute("CidadeAtual", new{id=cidades.Id},cidades);
+
+        }
     }
 }
